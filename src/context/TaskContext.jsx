@@ -1,12 +1,14 @@
-import { createContext } from "react";
+import { useState, createContext } from "react";
+import { tasks as data } from "../data/tasks";
 
 export const TaskContext = createContext();
 
 export function TaskContextProvider(props) {
-  const number = "sos bobito ?";
+  const [tasks, setTasks] = useState(data);
+  const value = { tasks, setTasks };
   return (
-    <TaskContext.Provider value={number}>
-      {props.children}
-    </TaskContext.Provider>
+    <TaskContext.Provider value={value}>{props.children}</TaskContext.Provider>
   );
 }
+
+export default TaskContext;

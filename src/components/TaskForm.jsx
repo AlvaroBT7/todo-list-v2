@@ -1,17 +1,25 @@
-import { useState } from "react";
-import { tasks } from "../data/tasks";
+import { useState, useContext } from "react";
+import { TaskContext } from "../context/TaskContext";
 
-function TaskForm({ createTask }) {
+function TaskForm() {
+  const { tasks, setTasks } = useContext(TaskContext);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
+  const createTask = () => {
+    setTasks([
+      ...tasks,
+      {
+        id: tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 0,
+        title: title ? title : "untraked task",
+        description: description ? description : "untraked task"
+      },
+    ]);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const task = {
-      title: title ? title : "untraked task",
-      description: description ? description : "untraked task",
-    };
-    createTask(task);
+    createTask();
     setTitle("");
     setDescription("");
   };
