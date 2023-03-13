@@ -2,12 +2,9 @@ import { useContext } from "react";
 import TaskContext from "../context/TaskContext";
 
 function TaskCard({ task }) {
-  const { tasks, setTasks } = useContext(TaskContext);
-  const removeTask = () => {
-    setTasks(tasks.filter(currentTask => currentTask.id != task.id));
-  };
+  const { tasks, removeTask } = useContext(TaskContext);
   const handleButton = () => {
-    removeTask();
+    removeTask(task);
   };
   return (
     <div>
