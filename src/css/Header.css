@@ -1,0 +1,44 @@
+.header-title-container {
+  margin: auto;
+  width: 700px;
+  background-color: var(--background-color);
+  color: #fff;
+  padding: 25px 0;
+}
+
+.header-title-container * {
+  margin: 10px 0;
+}
+
+.header-title {
+  font-size: var(--big-font-size);
+  text-align: center;
+}
+
+.header-subtitle {
+  font-size: var(--small-font-size);
+  color: var(--dark-background-font-color-subtitle);
+  text-align: center;
+}
+
+.header-subtitle b {
+  color: var(--dark-background-font-color);
+  transition: all 0.5s;
+}
+
+.header-subtitle b.glow {
+  color: var(--background-color-event);
+
+  animation-name: pop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

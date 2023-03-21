@@ -1,0 +1,56 @@
+.task-container {
+    padding: 10px 50px;
+}
+
+.task-container * {
+    margin: 15px 0;
+}
+
+.task-title {
+    max-width: 100%;
+    font-size: var(--big-font-size);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.task-title.done {
+    color: rgb(228, 44, 44);
+    text-decoration: line-through;
+}
+
+.task-description {
+    max-width: 100%;
+    color: var(--dark-background-font-color-subtitle);
+    font-size: var(--regular-font-size);
+}
+
+.del-task-button {
+    padding: 10px;
+    font-size: var(--regular-font-size);
+    border-radius: 10px;
+    color: #fff;
+    border: 3px solid var(--background-color-event);
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.del-task-button:hover {
+    background-color: var(--background-color-event);
+    color: var(--light-background-font-color);
+}
+
+.done-task-button {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: var(--regular-font-size);
+    border-radius: 10px;
+    color: #fff;
+    border: 3px solid var(--background-color-event);
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.done-task-button:hover {
+    background-color: var(--background-color-event);
+    color: var(--light-background-font-color);
+}

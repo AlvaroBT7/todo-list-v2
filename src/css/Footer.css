@@ -1,0 +1,76 @@
+footer {
+    height: 250px;
+    background-color: var(--background-color-dark);
+    color: #fff;
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer * {
+    /* margin-left: 50px; */
+}
+
+.footer-title-container * {
+    /* margin: 5px 0; */
+}
+
+.footer-title {
+    font-size: var(--big-font-size);
+}
+
+.footer-subtitle {
+    font-size: var(--small-font-size);
+    color: var(--dark-background-font-color-subtitle);
+}
+
+.footer-subtitle a {
+    font-size: var(--regular-font-size);
+    color: var(--dark-background-font-color-subtitle);
+    transition: all 0.2s;
+}
+
+.footer-subtitle a:hover {
+    color: var(--background-color-event);
+}
+
+.footer-subtitle a svg {
+    padding: 0 5px;
+    font-size: 30px;
+    position: relative;
+    top: 9px;
+    left: 5px;
+}
+
+.footer-li-container {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.footer-li {
+    font-size: var(--regular-font-size);
+    color: var(--dark-background-font-color-subtitle);
+}
+
+.footer-li a {
+    font-size: var(--regular-font-size);
+    color: var(--dark-background-font-color-subtitle);
+    transition: all 0.2s;
+}
+
+.footer-li a:hover {
+    color: var(--background-color-event);
+}
+
+.footer-li a svg {
+    padding: 0 5px;
+    font-size: 27px;
+    position: relative;
+    top: 9px;
+}
+
+.footer-list-titlte {
+    font-size: var(--big-font-size);
+}

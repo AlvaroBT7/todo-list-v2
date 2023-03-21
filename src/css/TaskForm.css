@@ -1,0 +1,46 @@
+.main-form {
+    margin: auto;
+    /* margin-top: 100px; */
+    max-width: 700px;
+    background-color: var(--background-color);
+    padding: 40px 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.task-input {
+    min-width: 100%;
+    background-color: transparent;
+    color: var(--dark-background-font-color);
+    border-bottom: 1px solid #555;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+textarea.task-input {
+    resize: none;
+    min-height: 200px;
+}
+
+.task-input::placeholder {
+    transition: all 0.2s;
+}
+
+.task-input:focus::placeholder {
+    color: var(--dark-background-font-color);
+}
+
+.new-task-button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid var(--background-color-event);
+    color: var(--dark-background-font-color);
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+.new-task-button:hover {
+    background-color: var(--background-color-event);
+    color: var(--light-background-font-color);
+}
